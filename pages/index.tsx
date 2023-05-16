@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image';
 
 function Square(props: any) {      
   return (
@@ -96,7 +97,7 @@ export default function Game() {
   }
 
   return (
-    <div className="game">
+    <div className="game">      
       <div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} onRestart={restartGame} />
       </div>
