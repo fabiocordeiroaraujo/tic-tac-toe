@@ -1,27 +1,104 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html, body {
+  height: 100%;
+  background: linear-gradient(0deg, #9bc6ff, #409ff8);
+}
+
+html {
+  display: table;
+  margin: auto;
+  font-size: 16px;  
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  display: table-cell;
+  vertical-align: middle;  
+}
+
+.game {
+  align-items: center;
+}
+
+.square {  
+  background: #fff;
+  border: none;
+  float: left;
+  font-size: 12vmin;
+  font-weight: bold;
+  line-height: 34px;
+  height: 20vmin;
+  width: 20vmin;
+  margin-right: 0.12em;
+  margin-top: 0.12em;
+  padding: 0;
+  text-align: center;    
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #409ff8;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin: 0px 0px 0.5em;
+  border: none;
+  text-align: center;
+  width: 63vmin;
+  height: 8vmin;
+  background-color: #055cce;
+  padding: 1.5em;
+  color: #fff;
+  opacity: 80%;
+  font-size: 2vmin;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.restart {
+  font-size: 2vmin;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #055cce;
+  color: #fff;
+  border-radius: 8px;
+  border: none;    
+  padding: 10px;
+  margin: 1.2em 0;  
+  width: 63vmin;
+  height: 8vmin;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.game-history {  
+  margin-bottom: 20px;
+} 
+
+.move {
+  font-size: 2vmin;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #1b55a1;
+  color: #fff;
+  border-radius: 8px;
+  border: none; 
+  padding: 1em;
+  margin: 0 0.63em 0 0;
+}
+
+.move-list {
+  list-style-type: none;
+}
+
+.move-list-item {
+  display: inline-block;
 }
