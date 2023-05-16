@@ -14,11 +14,13 @@ TIC-TAC-TOE
   </a>
 </p>
 
-[//]: # (Add your gifs/images here:)
-<div>
-  <img src="IMAGE_1_URL" alt="demo" height="425">
-  <img src="IMAGE_2_URL" alt="demo" height="425">
+<br />
+
+<div align="center">
+  <img src="public/game.png" alt="demo" height="425">  
 </div>
+
+<br />
 
 <hr />
 
